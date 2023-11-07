@@ -16,7 +16,6 @@ namespace godot {
         private:
 
         protected:
-            VoxelRuleEngine engine;
             ChunkMatrix chunks;
 
             static void _bind_methods();
@@ -30,6 +29,7 @@ namespace godot {
 
             Vector3i map_size; // exported
             Vector3i chunk_size; // exported
+            VoxelRuleEngine engine; // exported
 
             void _process(double delta);
     };
